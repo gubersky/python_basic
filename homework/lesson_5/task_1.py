@@ -1,4 +1,4 @@
-value = input("Input to words using one a space: ")
+value = input("Input to words using one a space: ").strip()
 
 if value.count(" ") == 1:
     text = value.replace(" ", "")
