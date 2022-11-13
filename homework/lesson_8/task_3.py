@@ -11,4 +11,4 @@ for i in arr:
     else:
         count_odd += i
 
-print("Yes" if count_even > count_odd else "No")
+print("Yes" if count_even < count_odd else "No")
