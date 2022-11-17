@@ -17,7 +17,7 @@ text = """
 і всіми своїми ділами.
 """
 
-new_text = text.replace(',', '').replace('.', '').lower().split()
+new_text = text.replace(',', '').replace('.', '').replace('—', '').lower().split()
 
 dictionary = {i: new_text.count(i) for i in new_text}
 
@@ -28,5 +28,5 @@ for i, k in dictionary.items():
     if k > count:
         count = k
         word = i
-
+print(dictionary)
 print("The word:", word, "\n" "Occurs most often:", count, "times")
