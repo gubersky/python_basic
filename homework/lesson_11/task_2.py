@@ -19,7 +19,6 @@ def decorator(func):
             else:
                 print("Password accepted:", password)
                 break
-            return func
 
     return wrapper
 
