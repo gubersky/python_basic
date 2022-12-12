@@ -17,7 +17,8 @@ text = """
 і всіми своїми ділами.
 """
 
-new_text = text.replace(',', '').replace('.', '').replace('—', '').lower().split()
+new_text = text.replace(',', '').replace('.', '')\
+           .replace('—', '').lower().split()
 
 dictionary = {i: new_text.count(i) for i in new_text}
 
