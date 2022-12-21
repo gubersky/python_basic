@@ -12,4 +12,4 @@ def dict_handler(link_on_dict: dict, key, default_value):
 
 if __name__ == '__main__':
     arr = {2: "one"}
-    dict_handler(arr, 2, "two")
+    dict_handler(arr, 3, "two")
